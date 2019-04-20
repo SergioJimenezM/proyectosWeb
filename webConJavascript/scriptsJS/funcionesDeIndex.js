@@ -1,9 +1,4 @@
 
-function autenticado(){
-/*escribir en la web un archivo html distinto*/
-
-}
-
 function esSegura(){
 	let porProbarSeguridad = document.getElementById("password")
 	
@@ -14,5 +9,5 @@ function esSegura(){
 	}else if(porProbarSeguridad.value ){
 		
 	}
-	
+
 }
