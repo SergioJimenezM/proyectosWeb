@@ -1,6 +1,6 @@
 
 function autenticado(){
-/*escribir en la web otra pagina donde la persona pueda hacer movidas*/
+/*escribir en la web un archivo html distinto*/
 
 }
 
