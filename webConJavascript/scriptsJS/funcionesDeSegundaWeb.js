@@ -105,3 +105,7 @@ igual.onclick = function(e){
   resolver();
 }
 
+function volverAlInicio(){
+		window.location.href = "index.html"
+}
+
