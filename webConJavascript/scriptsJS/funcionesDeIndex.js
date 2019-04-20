@@ -6,8 +6,8 @@ function esSegura(){
 		porProbarSeguridad.value = ""
 		porProbarSeguridad.placeholder = "Al menos debe contener 8 caracteres"
 		porProbarSeguridad.style.borderColor = "red"
-	}else if(porProbarSeguridad.value ){
-		
+	}else{
+		window.location.href = "segundaPagina.html"
 	}
 
 }
