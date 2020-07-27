@@ -1,0 +1,10 @@
+body {
+background-color: lightblue;
+width: 80%;
+border: 10px solid blue;
+margin: 5%;
+}
+
+.textoCentrado{
+text-align: center;
+}
