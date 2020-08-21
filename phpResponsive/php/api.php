@@ -1,10 +1,7 @@
 <?php
 header("Content-Type: application/json");
-
-echo json_encode("ERR:NoHayAvances");
-
+GET();
 class database{
-
 public $host = "mysql:host=localhost;dbname=responsive";
 public $user = "responsive";
 public $pas = "responsive";
@@ -24,13 +21,18 @@ public function desconectar(){
 	echo json_encode("sin implementar");
 	}
 	
-};
+};/*fin de clase database*/
 
 function GET(){
 	$db = new database();
 	$con = $db->conectar();
-	
-	
+	$respuesta = $con->prepare("select * from personas;");
+	if($respuesta->execute()){
+		$arreglo = $respuesta->fetchAll();
+		echo json_encode($arreglo);
+		}else{
+			echo "Error:Ha ocurrido un error";
+			};	
 	};
 
 function POST(){
