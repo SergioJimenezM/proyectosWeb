@@ -29,11 +29,26 @@ function mostrar(){
 	};
 };
 
-function anterior(){};
-function siguiente(){};
+function crearCuenta(){
+	httpPeticion.open("GET", "php/inicioDeSesion.php", true);
+	httpPeticion.send();
+	httpPeticion.onreadystatechange = function(){
+		if(httpPeticion.readyState == 4 && httpPeticion.status == 200){
+			/*var objeto = JSON.parse(httpPeticion.responseText);*/
+			var posicion = document.getElementById("marco");
+			posicion.innerHTML = "<p>Cosa de crear cuenta</p>";
+		};
+	};
+};
 
-function agregar(){};
-
-function actualizar(){};
-
-function eliminar(){};
+function iniciarSesion(){
+	httpPeticion.open("GET", "php/registrarse.php", true);
+	httpPeticion.send();
+	httpPeticion.onreadystatechange = function(){
+		if(httpPeticion.readyState == 4 && httpPeticion.status == 200){
+			var posicion = document.getElementById("marco");
+			/*var objeto = JSON.parse(httpPeticion.responseText);*/
+			posicion.innerHTML = "<p>Cosa de inicio de sesión</p>";
+		};
+	};
+};

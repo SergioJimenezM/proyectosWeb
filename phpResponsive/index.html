@@ -9,26 +9,27 @@
 	</head>
 	
 	<body>
-		<h2 id="Mensaje" class= "textoCentrado"></h2>
-		<h2 id="demo" class= "textoCentrado">Pagina Web</h2>
-		<button onclick="peticion()">Click Aqui</button>
-		<br><br>
-		<input type="text" id="id" placeholder="ID" class="textoCentrado">
-		<br><br>
-		<input type="text" id="nombre" placeholder="Nombre" class="textoCentrado">
-		<br><br>
-		<input type="text" id="edad" placeholder="Edad" class="textoCentrado">
-		<br><br>
-		<input type="text" id="ciudad" placeholder="Ciudad" class="textoCentrado">
-		<br><br><br><br>
-		<button onclick="anterior()">Anterior</button>
-		<button onclick="mostrar()">Mostrar todos</button>
-		<button onclick="agregar()">Agregar</button>
-		<button onclick="actualizar()">Actualizar</button>
-		<button onclick="eliminar()">Eliminar</button>
-		<button onclick="siguiente()">Siguiente</button>
-		<br><br>
-		<p id="table"></p>
+		<header class="barraSuperior">
+			
+			<ul>
+				<li style="float:left;">
+					<!<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Tokyoship_Home_icon.svg/300px-Tokyoship_Home_icon.svg.png" alt="Volver al inicio" style="width:33px; height:33px;">
+				</li>
+				<li>
+					<input type="button" class="botonDeBarra" onclick="iniciarSesion()" value="Iniciar sesión">
+				</li>
+				<li>
+					<input type="button" class="botonDeBarra" onclick="crearCuenta()" value="Crear cuenta">
+				</li>
+			</ul>
+		</header>
+		
+		<p id="marco"></p>
+		
+		<footer class="barraSuperior">
+			<p>Autor: Sergio Jimenez</p>
+			<p>Terminos del Servicio: los datos ingresados serán borrados</p>
+		</footer>
 	</body>
 	
 </html>

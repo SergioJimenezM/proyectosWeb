@@ -1,10 +1,49 @@
 body {
-background-color: lightblue;
-width: 80%;
-border: 10px solid blue;
-margin: 5%;
+background-color: #ffffff ;
+border-radius:5%;
 }
 
 .textoCentrado{
 text-align: center;
 }
+
+.barraSuperior{
+z-index:2;
+font-size:17px;
+background-color: #5F5F5F;
+color:#f1f1f1;
+width:100%;
+padding:0;
+letter-spacing:1px;
+font-family:arial;
+}
+
+li{
+float:right;
+}
+
+ul{
+list-style-type:none;
+overflow:hidden;
+margin:0;
+padding:0;
+}
+
+.botonDeBarra{
+display:block;
+padding:8px;
+background-color:##5F5F5F;
+text-align:center;
+}
+
+.botonDeBarra:hover{
+background-color:#111;
+}
+
+/*
+	1. color primario #6200EE
+	2. color secundario #3700B3
+	3. color de contraste #03DAC5
+	4. Baseline on surface color #B00020
+	5. Baseline on error color #B00020  
+*/
